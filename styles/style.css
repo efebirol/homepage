@@ -1,0 +1,236 @@
+#wrapper {
+    width: 960px;
+    margin: 20px auto;
+}
+header {
+    height: 110px;
+    padding: 10px;
+}
+
+.logowrapper{
+    display: inline-block;
+}
+
+nav{
+    display: inline-block;
+}
+
+header img{
+    float: left;
+}
+
+.headertext{
+    margin: 20px 0 0 10px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.headertext h1{
+    margin: 0;
+}
+
+.headertext h4{
+    margin: 5px 0;
+}
+
+nav{
+    margin-top: 40px;
+    float: right;
+}
+
+nav a{
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:last-child{
+    padding: 0;
+}
+
+nav a:hover{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#middlecontent {
+    width: 290px;
+    float: left;
+    padding: 5px 15px;
+}
+
+#middle {
+    width: 294px; /* Account for margins + border values */
+    float: left;
+    padding: 5px 15px;
+    margin: 0px 5px 5px 5px;
+}
+#middle .heading{
+
+}
+
+#middle #content p{
+    background: #cccccc;
+    margin: 0;
+    padding: 5px;
+}
+
+#middle h2{
+    text-transform: uppercase;
+    vertical-align: text-bottom;
+    display: inline;
+}
+
+#sidebar {
+    width: 270px;
+    padding: 5px 15px;
+    float: left;
+}
+
+#sidebar h2{
+    display: inline;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.toolsitemtext{
+    display: inline-block;
+}
+
+footer {
+    clear: both;
+    padding: 0 15px;
+    background: #000;
+    height: 15px;
+}
+
+.footerelements{
+    float: right;
+}
+
+footer a{
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* display smaller 980px */
+@media screen and (max-width: 980px) {
+
+    #wrapper {
+        width: 94%;
+    }
+    #middlecontent {
+        width: 41%;
+        padding: 1% 4%;
+    }
+    #middle {
+        width: 41%;
+        padding: 1% 4%;
+        margin: 0px 0px 5px 5px;
+        float: right;
+    }
+
+    #sidebar {
+        clear: both;
+        padding: 1% 4%;
+        width: auto;
+        float: none;
+    }
+
+    header, footer {
+        padding: 1% 4%;
+    }
+}
+
+/* display smaller 700px */
+@media screen and (max-width: 600px) {
+
+    #middlecontent {
+        width: auto;
+        float: none;
+    }
+
+    #middle {
+        width: auto;
+        float: none;
+        margin-left: 0px;
+    }
+
+    #sidebar {
+        width: auto;
+        float: none;
+    }
+
+}
+
+/* display smaller 480px*/
+@media screen and (max-width: 480px) {
+
+    header {
+        height: auto;
+    }
+    h1 {
+        font-size: 2em;
+    }
+
+    header img{
+        display: none;
+    }
+}
+
+header, #middlecontent, #middle, #sidebar {
+    margin-bottom: 5px;
+}
+
+#wrapper, header, #middlecontent, #middle, #sidebar, footer {
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
