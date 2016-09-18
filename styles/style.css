@@ -1,3 +1,4 @@
+/*Default CSS*/
 #wrapper {
     width: 960px;
     margin: 20px auto;
@@ -103,6 +104,10 @@ nav a:hover{
 
 .toolsitemtext{
     display: inline-block;
+}
+
+.toolsitem img{
+	vertical-align: top;
 }
 
 footer {

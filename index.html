@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Knight Industries</title>
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
-    <script src="scripts/respond.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="scripts/michaelscript.js"></script>
-    <script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knight Industries</title>
+<link href="styles/normalize.css" rel="stylesheet">
+<link href="styles/style.css" rel="stylesheet">
+<script src="scripts/respond.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="scripts/michaelscript.js"></script>
+<script>
         var elements = ["header", "nav", "main", "section", "footer", "aside"];
         for (var i = 0; i < elements.length; i++) {
             document.createElement(elements[i]);
@@ -16,141 +16,246 @@
     </script>
 
 
-    <style type="text/css">
-
-    </style>
+<style type="text/css">
+</style>
 </head>
 
 <body>
-    <div id="wrapper">
-        <footer>
-            <div class="footerelements">
-                <a href="#">contact us |</a> 
-                <a href="#">support |</a> 
-                <a href="#">our story</a>
-            </div>
-        </footer>
+	<div id="wrapper">
+		<footer>
+			<div class="footerelements">
+				<a href="#">contact us |</a> <a href="#">support |</a> <a href="#">our
+					story</a>
+			</div>
+		</footer>
 
-        <header>
-            <div class="logowrapper">
-                <img src="images/banner.png" alt="KnightImage"/>
-                <div class="headertext">
-                    <h1>Knight Industries</h1>
-                    <h4>Declassified records</h4>
-                </div>
-            </div>
-            <nav>
-                <a href="#">employees</a> 
-                <a href="#">projects</a> 
-                <a href="#">assets</a> 
-                <a href="#">technology</a> 
-            </nav>
-        </header>
+		<header>
+			<div class="logowrapper">
+				<img src="images/banner.png" alt="BannerImage" />
+				<div class="headertext">
+					<h1>Birol Efe</h1>
+					<h4>Personal page</h4>
+				</div>
+			</div>
+			<nav>
+				<a href="#">employees</a> <a href="#">projects</a> <a href="#">assets</a>
+				<a href="#">technology</a>
+			</nav>
+		</header>
 
-        <section id="middlecontent">
-            <img src="images/michael.png" alt=""/>
-            <h2>Michael Arthur Long</h2>
-            <p>Born: January 9, 1949</p>
-            <p>Text Text Text Text Text Text Text Text Text </p>
-            <p><strong>Hired:</strong> Text Text Text</p>
-            <p><strong>Department:</strong> F.L.A.G.</p>
-            <p><strong>Previous Employers:</strong></p>
-            <p>1968 - 1972 Text Text Text</p>
-            <p>1972 - 1982 Text Text Text</p>
-        </section>
+		<section id="middlecontent">
+			<img src="images/birol.jpg" alt="BirolImage" />
+			<h2>Birol Efe</h2>
+			<p>Born: March 28, 1981</p>
+			<p>Text Text Text Text Text Text Text Text Text</p>
+			<p>
+				<strong>Hired:</strong> Text Text Text
+			</p>
+			<p>
+				<strong>Department:</strong> F.L.A.G.
+			</p>
+			<p>
+				<strong>Previous Employers:</strong>
+			</p>
+			<p>1968 - 1972 Text Text Text</p>
+			<p>1972 - 1982 Text Text Text</p>
+		</section>
 
-        <section id="middle">
-            <div class="heading">
-                <img src="images/dartboard.png" alt=""/>
-                <h2>Mission History</h2>
-            </div>
-            <p class="odd"></p>
-            <p class="even"></p>
+		<section id="middle">
+			<div class="heading">
+				<img src="images/dartboard.png" alt="" />
+				<h2>Mission History</h2>
+			</div>
+			<p class="odd"></p>
+			<p class="even"></p>
 
-            <!--            test-->
-            <!-- the input fields that will hold the variables we will use -->
-            <input type='hidden' id='current_page' />
-            <input type='hidden' id='show_per_page' />
+			<!--            test-->
+			<!-- the input fields that will hold the variables we will use -->
+			<input type='hidden' id='current_page' /> <input type='hidden'
+				id='show_per_page' />
 
-            <!-- Content div. The child elements will be used for paginating(they don't have to be all the same,
+			<!-- Content div. The child elements will be used for paginating(they don't have to be all the same,
                     you can use divs, paragraphs, spans, or whatever you like mixed together). '-->
-            <div id='content'>
-                <p class="odd">1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>2 Vestibulum consectetur ipsum sit amet urna euismod imperdiet aliquam urna laoreet.</p>
-                <p class="odd">3 Curabitur a ipsum ut elit porttitor egestas non vitae libero.</p>
-                <p>4 Pellentesque ac sem ac sem tincidunt euismod.</p>
-                <p class="odd">5 Duis hendrerit purus vitae nibh tincidunt bibendum.</p>
-                <p>6 Nullam in nisi sit amet velit placerat laoreet.</p>
-                <p class="odd">7 Vestibulum posuere ligula non dolor semper vel facilisis orci ultrices.</p>
-                <p>8 Donec tincidunt lorem et dolor fringilla ut bibendum lacus fringilla.</p>
-                <p class="odd">9 In non eros eu lacus vestibulum sodales.</p>
-                <p>10 Duis ultrices metus sit amet sem adipiscing sit amet blandit orci convallis.</p>
-                <p class="odd">11 Proin ullamcorper est vitae lorem mollis bibendum.</p>
-                <p>12 Maecenas congue fringilla enim, tristique laoreet tortor adipiscing eget.</p>
-                <p class="odd">13 Duis imperdiet metus et lorem venenatis nec porta libero porttitor.</p>
-                <p>14 Maecenas lacinia lectus ac nulla commodo lacinia.</p>
-                <p class="odd">15 Maecenas quis massa nisl, sed aliquet tortor.</p>
-                <p>16 Quisque porttitor tellus ut ligula mattis luctus.</p>
-                <p class="odd">17 In at mi dolor, at consectetur risus.</p>
-                <p>18 Etiam id erat ut lorem fringilla dictum.</p>
-                <p class="odd">19 Curabitur sagittis dolor ac nisi interdum sed posuere tellus commodo.</p>
-                <p>20 Pellentesque quis magna vitae quam malesuada aliquet.</p>
-            </div>
+			<div id='content'>
+				<p class="odd">1 Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit.</p>
+				<p>2 Vestibulum consectetur ipsum sit amet urna euismod
+					imperdiet aliquam urna laoreet.</p>
+				<p class="odd">3 Curabitur a ipsum ut elit porttitor egestas non
+					vitae libero.</p>
+				<p>4 Pellentesque ac sem ac sem tincidunt euismod.</p>
+				<p class="odd">5 Duis hendrerit purus vitae nibh tincidunt
+					bibendum.</p>
+				<p>6 Nullam in nisi sit amet velit placerat laoreet.</p>
+				<p class="odd">7 Vestibulum posuere ligula non dolor semper vel
+					facilisis orci ultrices.</p>
+				<p>8 Donec tincidunt lorem et dolor fringilla ut bibendum lacus
+					fringilla.</p>
+				<p class="odd">9 In non eros eu lacus vestibulum sodales.</p>
+				<p>10 Duis ultrices metus sit amet sem adipiscing sit amet
+					blandit orci convallis.</p>
+				<p class="odd">11 Proin ullamcorper est vitae lorem mollis
+					bibendum.</p>
+				<p>12 Maecenas congue fringilla enim, tristique laoreet tortor
+					adipiscing eget.</p>
+				<p class="odd">13 Duis imperdiet metus et lorem venenatis nec
+					porta libero porttitor.</p>
+				<p>14 Maecenas lacinia lectus ac nulla commodo lacinia.</p>
+				<p class="odd">15 Maecenas quis massa nisl, sed aliquet tortor.</p>
+				<p>16 Quisque porttitor tellus ut ligula mattis luctus.</p>
+				<p class="odd">17 In at mi dolor, at consectetur risus.</p>
+				<p>18 Etiam id erat ut lorem fringilla dictum.</p>
+				<p class="odd">19 Curabitur sagittis dolor ac nisi interdum sed
+					posuere tellus commodo.</p>
+				<p>20 Pellentesque quis magna vitae quam malesuada aliquet.</p>
+			</div>
 
-            <!-- An empty div which will be populated using jQuery -->
-            <div id='page_navigation'></div>
+			<!-- An empty div which will be populated using jQuery -->
+			<div id='page_navigation'></div>
 
-        </section>
+		</section>
 
-        <aside id="sidebar">
-            <img src="images/revolver.png" alt=""/>
-            <h2>Tools</h2>
-            <div class="toolsitem">
-                <img src="images/kitt.png" alt="kitt"/>
-                <div class="toolsitemtext">
-                    <p>Item Heading</p>
-                    <p>Item Details</p>
-                    <a href="#" id="myBtn">Details</a> 
-                </div>
-            </div>
+		<aside id="sidebar">
+			<img src="images/revolver.png" alt="" />
+			<h2>Employers</h2>
+			<div class="toolsitem">
+				<img src="images/springerlogo.svg.png" alt="kitt" />
+				<div class="toolsitemtext">
+					<p>Springer Nature</p>
+					<p>Item Details</p>
+					<a href="#" id="myBtn">Details</a>
+				</div>
+			</div>
 
-            <div class="toolsitem">
-                <img src="images/kitt.png" alt="kitt"/>
-                <div class="toolsitemtext">
-                    <p>Item Heading</p>
-                    <p>Item Details</p>
-                    <a href="#" id="myBtn">Details</a> 
-                </div>
-            </div>
-            <div class="toolsitem">
-                <img src="images/kitt.png" alt="kitt"/>
-                <div class="toolsitemtext">
-                    <p>Item Heading</p>
-                    <p>Item Details</p>
-                    <a href="#" id="myBtn">Details</a> 
-                </div>
-            </div>
-            <div class="toolsitem">
-                <img src="images/kitt.png" alt="kitt"/>
-                <div class="toolsitemtext">
-                    <p>Item Heading</p>
-                    <p>Item Details</p>
-                    <a href="#" id="myBtn">Details</a> 
-                </div>
-            </div>
-            
-            
-            <!-- Shadowbox Content -->
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">x</span>
-                    <img src="images/bigkitt.png" alt=""/>
-                    <h1>K.I.T.T.</h1>
-                    <h2>Knight Industries Two Thousand</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </aside>
-    </div>
+			<div class="toolsitem">
+				<img src="images/kitt.png" alt="kitt" />
+				<div class="toolsitemtext">
+					<p>Item Heading</p>
+					<p>Item Details</p>
+					<a href="#" id="myBtn">Details</a>
+				</div>
+			</div>
+			<div class="toolsitem">
+				<img src="images/kitt.png" alt="kitt" />
+				<div class="toolsitemtext">
+					<p>Item Heading</p>
+					<p>Item Details</p>
+					<a href="#" id="myBtn">Details</a>
+				</div>
+			</div>
+			<div class="toolsitem">
+				<img src="images/kitt.png" alt="kitt" />
+				<div class="toolsitemtext">
+					<p>Item Heading</p>
+					<p>Item Details</p>
+					<a href="#" id="myBtn">Details</a>
+				</div>
+			</div>
+
+
+			<!-- Shadowbox Content -->
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">x</span> <img src="images/bigkitt.png" alt="" />
+					<h1>K.I.T.T.</h1>
+					<h2>Knight Industries Two Thousand</h2>
+
+					<div>
+						<article>
+							<header>
+								<h1>Recently completed work</h1>
+							</header>
+
+							<div>
+								<p>
+									In April 2015 I redesign “<a
+										href="http://www.springermedizin.de/">www.springermedizin.de</a>“.<br>
+									Java, Spring FW, JSP, MySQL, CSS, HTML, Javascript and jQuery,
+									XSLT. All the modules on the startpage are modular and can be
+									reused with the CMS and are therefore reusable throughout the
+									whole Springermedizin webpage.<img src="./images/image002.jpg">
+								</p>
+								<p>In order to realise those tickets, I groomed the Project
+									Manager.</p>
+								<p>Let me go a little into detail:</p>
+								<p>1) Hero Area “Aktuelles”</p>
+								<p>At the top you can see an output of a recent teaser. It
+									is filled dynamically over the FAST Collection (Search Engine)</p>
+								<p>
+									<img src="./images/image002-300x134.jpg" alt="Hero Area"
+										width="300" height="134">
+								</p>
+								<p>Style and formatting is done within the HTML, JSP and
+									CSS. The output of grey trailerbox is done in the JSP and JS
+									(jQuery).</p>
+								<p>2) The content for the collections “Medizin aktuell” as
+									well as “Praxis and Beruf” are also is filled with FAST. FAST
+									Parameters in the ECMS make sure that the number of hits and
+									the filters (e. g. date) are controllable from the editor
+									himself. FAST Implementation is done in Java. The orange “eMed”
+									lock is in this case a check if the user has access to the
+									article or not (Spring FW – Spring Acegi).</p>
+								<p>
+									<img class="alignnone size-medium wp-image-7"
+										src="./images/image004-300x148.jpg" alt="Medizin aktuell"
+										width="300" height="148">
+								</p>
+								<p>3) The “Banner” can be inserted over the CMS as well with
+									a corresponding link. There is also some advertisement that is
+									inserted via Google Doubleclick.</p>
+								<p>
+									<img class="alignnone size-medium wp-image-8"
+										src="./images/image006-300x147.jpg" alt="Banner" width="300"
+										height="147">
+								</p>
+								<p>4) “CME” is short for Continuing Medical Education.
+									German physicians have to gain points/credits over a certain
+									period of time.</p>
+								<p>According to the profile (profession of the doctor), I
+									output certain courses where he can gain his points. Here also
+									all the formatting and styling is done via JSP, Javascript,
+									jQuery, Ajax and CSS. Implementation in plain Java.</p>
+								<p>
+									<img class="alignnone size-medium wp-image-9"
+										src="./images/image008-300x115.jpg" alt="CME" width="300"
+										height="115">
+								</p>
+								<p>5) “Monster” Jobs are send via RSS-XML and then
+									transformed with some Java and XSLT over the JSP into our
+									webpage. I also provided the possibility for the editor to
+									limit the number of entries/items, filter for certain
+									physicians and set their own XSLT formatter for the output.</p>
+								<p>Implementation is done in Java (e. g. XSL
+									Transformation). Used Java TLD’s to get the parameters for the
+									JSPs. Formatting and styling is done via JSP, Javascript,
+									jQuery and CSS.</p>
+								<p>
+									<img class="alignnone size-medium wp-image-10"
+										src="./images/image010-300x155.jpg" alt="Monster Jobs"
+										width="300" height="155"
+										>
+								</p>
+								<p>6) Search Box</p>
+								<p>Search Box with directs to our search page with the
+									according parameters. Whole styling of the search page is done
+									by me as well.</p>
+								<p>
+									<img class="alignnone size-medium wp-image-11"
+										src="./images/image012-300x92.jpg" alt="Search Box"
+										width="300" height="92">
+								</p>
+							</div>
+
+
+						</article>
+					</div>
+
+
+
+
+				</div>
+			</div>
+		</aside>
+	</div>
 </body>
 </html>
