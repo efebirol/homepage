@@ -197,10 +197,6 @@ header, #middlecontent, #middle, #sidebar {
     margin-bottom: 5px;
 }
 
-#wrapper, header, #middlecontent, #middle, #sidebar, footer {
-
-}
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -239,3 +235,79 @@ header, #middlecontent, #middle, #sidebar {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Visitenkarte mit Hover Effekt*/
+#wrapperBox {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.mydiv {
+	margin: 60px auto;
+	padding: 10px; 
+	width : 400px;
+	height: 500px;
+	background-color: #F0F0F0;
+	width: 850px;
+}
+
+/*ID-Selektor mit Hovereffekt: Schatten ohne Image*/
+#myDiv1 {
+	/*Transtion Delay verzögert aufkommen von Schatten*/
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+     -o-transition-duration: 1s;
+        transition-duration: 1s;
+}
+
+/*Hover Effekt für den ID-Selektor "myDiv1" */
+#myDiv1:hover {
+	box-shadow: 0 0 30px #000000;
+	background-color: #EDD966;
+}
+
+/* Akkordeon */
+a:visited {
+	background-color: #F1FFE3;
+}
+
+a:hover {
+	color: #3C5D29;
+	background-color: #F1FFE3;
+	border-bottom: 1px solid #4A6E35;
+}
+
+.mypets { /*header of 1st demo*/
+	cursor: hand;
+	cursor: pointer;
+	padding: 2px 5px;
+	border: 1px solid gray;
+	background: #E1E1E1;
+	padding-left: 10px;
+}
+
+.openpet { /*class added to contents of 1st demo when they are open*/
+	background-image: url(gradient_red.png);
+	background-repeat: repeat-y;
+	padding-left: 15px;
+	color: #AAAAAA;
+}
+
+.technology { /*header of 2nd demo*/
+	cursor: hand;
+	cursor: pointer;
+	font: bold 14px Arial regualar, Arial, Verdana;
+	margin: 10px 0;
+}
+
+.openlanguage {
+	/*class added to contents of 2nd demo when they are open*/
+	color: green;
+}
+
+.closedlanguage {
+	/*class added to contents of 2nd demo when they are closed*/
+	color: red;
+}
+
+/* ToDo: Responsive Design*/
