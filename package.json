@@ -1,0 +1,30 @@
+{
+    "name": "birol_homepage",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "node lib/start",
+      "build": "node lib/start build",
+      "ship": "node lib/start ship",
+      "test": "node dev/backstop test",
+      "reference": "node dev/backstop reference",
+      "new": "./new_component.sh"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "autoprefixer": "^8.0.0",
+      "backstopjs": "^3.1.19",
+      "express": "^4.16.2",
+      "handlebars": "^4.0.11",
+      "node-sass": "^4.7.2",
+      "postcss": "^6.0.18",
+      "rimraf": "^2.6.2",
+      "socket.io": "^2.0.4",
+      "softpack": "^0.3.7",
+      "svgson": "^2.1.0",
+      "yamljs": "^0.3.0"
+    }
+  }
+  

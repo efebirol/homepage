@@ -1,1 +1,6 @@
+dist_old
+dist
 .history
+node_modules
+private
+dev/backstop_data/*
