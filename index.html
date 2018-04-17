@@ -62,55 +62,85 @@
 		<main>
 
 			Beispiel: Vertikales Akkordeon
-			<div id="wrapperBox">
-				<div id="myDiv1" class="mydiv">
-					<h2>Aktuell</h2>
-					<h1>Lebenslauf/Vita (Kurzfassung)</h1>
-					<a href="#" onclick="ddaccordion.toggleone('mypets', 0); return false">Über mich
-					</a> |
-					<a href="#" onclick="ddaccordion.toggleone('mypets', 1); return false">Fähigkeiten &amp; Fertigkeiten</a> |
-					<a href="#" onclick="ddaccordion.toggleone('mypets', 2); return false">Werdegang</a>
+			<!--Start:  vertikales Akkordion -->
+			<div id="page">
+				<h1>Lebenslauf/Vita (Kurzfassung)</h1>
+				<a href="#" onClick="ddaccordion.toggleone('mypets', 0); return false">Über mich
+				</a> |
+				<a href="#" onClick="ddaccordion.toggleone('mypets', 1); return false">Fähigkeiten & Fertigkeiten</a> |
+				<a href="#" onClick="ddaccordion.toggleone('mypets', 2); return false">Werdegang</a>
 
-					<br>
-					<br>
-					<h3 class="mypets openpet" headerindex="0h">Ueber mich</h3>
-					<div class="thepet" contentindex="0c" style="display: block;">
-						<ul>
-							<img src="images/michael.png">
-							<li>Geburtsdatum: 1981</li>
-							<li>Geburtsort: Berlin</li>
-							<li>Staatsangehörigkeit: Deutsch</li>
-							<li>Grösse: 167 cm</li>
-						</ul>
-					</div>
-
-					<h3 class="mypets" headerindex="1h">Fähigkeiten &amp; Fertigkeiten</h3>
-					<div class="thepet" contentindex="1c" style="display: none;">
-						<br>
-						<ul>
-							<li>
-								<b>Sprachen</b>
-							</li>
-							<li>Deutsch</li>
-							<li>Englisch</li>
-							<li>Türkisch</li>
-							<br>
-							<li>
-								<b>Dialekte</b>
-							</li>
-						</ul>
-					</div>
-					<h3 class="mypets" headerindex="2h">Werdegang</h3>
-					<div class="thepet" contentindex="2c" style="display: none;">
-						<br> 1981: Geburtsdatum
-						<br>
-						<p>
-						</p>
-						<br>
-						<!--Ende:  vertikales Akkordion -->
-					</div>
+				<br />
+				<br />
+				<h3 class="mypets">Ueber mich</h3>
+				<div class="thepet">
+					<ul>
+						<img src="" />
+						<li>Geburtsdatum: 23. 12. 1975</li>
+						<li>Geburtsort: Schwiebus (Polen)</li>
+						<li>Staatsangehörigkeit: Deutsch/Polnisch</li>
+						<li>Grösse: 172 cm</li>
+						<li>Haare: blond</li>
+						<li>Augen: grün</li>
+					</ul>
 				</div>
+
+				<h3 class="mypets">Fähigkeiten & Fertigkeiten</h3>
+				<div class="thepet">
+					<br />
+					<ul>
+						<li>
+							<b>Sprachen</b>
+						</li>
+						<li>Deutsch</li>
+						<li>Polnisch</li>
+						<li>Englisch</li>
+						<br />
+						<li>
+							<b>Dialekte</b>
+						</li>
+						<li>Westfälisch</li>
+
+						<br />
+						<li>
+							<b>Führerschein</b>
+						</li>
+						<li>Klasse III</li>
+						<br />
+					</ul>
+				</div>
+
+				<h3 class="mypets">Werdegang</h3>
+				<div class="thepet">
+					<br /> 1981: Ausreise mit der Familie nach Deutschland
+					<br />
+
+					<br /> Ausbildung:
+					<br /> Abitur 1996 am Landschulheim Schloss Heessen
+					<br /> Max-Reinhardt-Seminar, Diplom 2001
+					<br /> Filmworkshop bei Istvan Szabo
+					<br />
+
+					<br /> Besondere Fähigkeiten:
+					<br /> Tauchen, Fechten, Schwimmen
+					<br /> Gesang, Tanz
+					<br />
+
+					<br /> Wohnmöglichkeiten Deutschland/Österreich/Polen:
+					<br /> Berlin, Köln, München, Hamburg, Kassel, Münster,
+					<br /> Wien, Linz;
+					<br /> Krakau, Stettin, Zielona Gora</div>
+
+				<p>
+					<!-- 
+					<a href="vita.html?mypets=2">Reload page and select the
+						3rd content using a URL parameter</a>
+						-->
+				</p>
+				<br />
 			</div>
+			<!--Ende:  vertikales Akkordion -->
+
 
 			<section id="middlecontent">
 				<img src="images/birol.jpg" alt="BirolImage" />

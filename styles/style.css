@@ -1,313 +1,362 @@
 /*Default CSS*/
 #wrapper {
-    width: 960px;
-    margin: 20px auto;
+  width: 960px;
+  margin: 20px auto;
 }
 header {
-    height: 110px;
-    padding: 10px;
+  height: 110px;
+  padding: 10px;
 }
 
-.logowrapper{
-    display: inline-block;
+.logowrapper {
+  display: inline-block;
 }
 
-nav{
-    display: inline-block;
+nav {
+  display: inline-block;
 }
 
-header img{
-    float: left;
+header img {
+  float: left;
 }
 
-.headertext{
-    margin: 20px 0 0 10px;
-    display: inline-block;
-    text-transform: uppercase;
+.headertext {
+  margin: 20px 0 0 10px;
+  display: inline-block;
+  text-transform: uppercase;
 }
 
-.headertext h1{
-    margin: 0;
+.headertext h1 {
+  margin: 0;
 }
 
-.headertext h4{
-    margin: 5px 0;
+.headertext h4 {
+  margin: 5px 0;
 }
 
-nav{
-    margin-top: 40px;
-    float: right;
+nav {
+  margin-top: 40px;
+  float: right;
 }
 
-nav a{
-    color: #000;
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 5px;
+nav a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px;
 }
 
-nav a:last-child{
-    padding: 0;
+nav a:last-child {
+  padding: 0;
 }
 
-nav a:hover{
-    color: #fff;
-    font-size: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: red;
-    border-radius: 5px;
-    padding: 5px;
+nav a:hover {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: red;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 #middlecontent {
-    width: 290px;
-    float: left;
-    padding: 5px 15px;
+  width: 290px;
+  float: left;
+  padding: 5px 15px;
 }
 
 #middle {
-    width: 294px; /* Account for margins + border values */
-    float: left;
-    padding: 5px 15px;
-    margin: 0px 5px 5px 5px;
+  width: 294px; /* Account for margins + border values */
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
 }
-#middle .heading{
-
-}
-
-#middle #content p{
-    background: #cccccc;
-    margin: 0;
-    padding: 5px;
+#middle .heading {
 }
 
-#middle h2{
-    text-transform: uppercase;
-    vertical-align: text-bottom;
-    display: inline;
+#middle #content p {
+  background: #cccccc;
+  margin: 0;
+  padding: 5px;
+}
+
+#middle h2 {
+  text-transform: uppercase;
+  vertical-align: text-bottom;
+  display: inline;
 }
 
 #sidebar {
-    width: 270px;
-    padding: 5px 15px;
-    float: left;
+  width: 270px;
+  padding: 5px 15px;
+  float: left;
 }
 
-#sidebar h2{
-    display: inline;
-    margin-top: 0;
-    text-transform: uppercase;
+#sidebar h2 {
+  display: inline;
+  margin-top: 0;
+  text-transform: uppercase;
 }
 
-.toolsitemtext{
-    display: inline-block;
+.toolsitemtext {
+  display: inline-block;
 }
 
-.toolsitem img{
-	vertical-align: top;
+.toolsitem img {
+  vertical-align: top;
 }
 
 footer {
-    clear: both;
-    padding: 0 15px;
-    background: #000;
-    height: 15px;
+  clear: both;
+  padding: 0 15px;
+  background: #000;
+  height: 15px;
 }
 
-.footerelements{
-    float: right;
+.footerelements {
+  float: right;
 }
 
-footer a{
-    color: #fff;
-    font-size: 13px;
-    text-transform: uppercase;
-    text-decoration: none;
+footer a {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* display smaller 980px */
 @media screen and (max-width: 980px) {
+  #wrapper {
+    width: 94%;
+  }
+  #middlecontent {
+    width: 41%;
+    padding: 1% 4%;
+  }
+  #middle {
+    width: 41%;
+    padding: 1% 4%;
+    margin: 0px 0px 5px 5px;
+    float: right;
+  }
 
-    #wrapper {
-        width: 94%;
-    }
-    #middlecontent {
-        width: 41%;
-        padding: 1% 4%;
-    }
-    #middle {
-        width: 41%;
-        padding: 1% 4%;
-        margin: 0px 0px 5px 5px;
-        float: right;
-    }
+  #sidebar {
+    clear: both;
+    padding: 1% 4%;
+    width: auto;
+    float: none;
+  }
 
-    #sidebar {
-        clear: both;
-        padding: 1% 4%;
-        width: auto;
-        float: none;
-    }
-
-    header, footer {
-        padding: 1% 4%;
-    }
+  header,
+  footer {
+    padding: 1% 4%;
+  }
 }
 
 /* display smaller 700px */
 @media screen and (max-width: 600px) {
+  #middlecontent {
+    width: auto;
+    float: none;
+  }
 
-    #middlecontent {
-        width: auto;
-        float: none;
-    }
+  #middle {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+  }
 
-    #middle {
-        width: auto;
-        float: none;
-        margin-left: 0px;
-    }
-
-    #sidebar {
-        width: auto;
-        float: none;
-    }
-
+  #sidebar {
+    width: auto;
+    float: none;
+  }
 }
 
 /* display smaller 480px*/
 @media screen and (max-width: 480px) {
+  header {
+    height: auto;
+  }
+  h1 {
+    font-size: 2em;
+  }
 
-    header {
-        height: auto;
-    }
-    h1 {
-        font-size: 2em;
-    }
-
-    header img{
-        display: none;
-    }
+  header img {
+    display: none;
+  }
 }
 
-header, #middlecontent, #middle, #sidebar {
-    margin-bottom: 5px;
+header,
+#middlecontent,
+#middle,
+#sidebar {
+  margin-bottom: 5px;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Visitenkarte mit Hover Effekt*/
 #wrapperBox {
-	width: 960px;
-	margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 
 .mydiv {
-	margin: 60px auto;
-	padding: 10px; 
-	width : 400px;
-	height: 500px;
-	background-color: #F0F0F0;
-	width: 850px;
+  margin: 60px auto;
+  padding: 10px;
+  width: 400px;
+  height: 500px;
+  background-color: #f0f0f0;
+  width: 850px;
 }
 
 /*ID-Selektor mit Hovereffekt: Schatten ohne Image*/
 #myDiv1 {
-	/*Transtion Delay verzögert aufkommen von Schatten*/
-    -moz-transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-     -o-transition-duration: 1s;
-        transition-duration: 1s;
+  /*Transtion Delay verzögert aufkommen von Schatten*/
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 /*Hover Effekt für den ID-Selektor "myDiv1" */
 #myDiv1:hover {
-	box-shadow: 0 0 30px #000000;
-	background-color: #EDD966;
+  box-shadow: 0 0 30px #000000;
+  background-color: #edd966;
 }
 
 /* Akkordeon */
+a {
+  text-decoration: none;
+  color: #5e9040;
+  border-bottom: 1px solid #b8e78b;
+}
+
 a:visited {
-	background-color: #F1FFE3;
+  background-color: #f1ffe3;
 }
 
 a:hover {
-	color: #3C5D29;
-	background-color: #F1FFE3;
-	border-bottom: 1px solid #4A6E35;
+  color: #3c5d29;
+  background-color: #f1ffe3;
+  border-bottom: 1px solid #4a6e35;
 }
 
-.mypets { /*header of 1st demo*/
-	cursor: hand;
-	cursor: pointer;
-	padding: 2px 5px;
-	border: 1px solid gray;
-	background: #E1E1E1;
-	padding-left: 10px;
+.mypets {
+  /*header of 1st demo*/
+  cursor: hand;
+  cursor: pointer;
+  padding: 2px 5px;
+  border: 1px solid gray;
+  background: #e1e1e1;
+  padding-left: 10px;
 }
 
-.openpet { /*class added to contents of 1st demo when they are open*/
-	background-image: url(gradient_red.png);
-	background-repeat: repeat-y;
-	padding-left: 15px;
-	color: #AAAAAA;
+.openpet {
+  /*class added to contents of 1st demo when they are open*/
+  background: rgba(226, 226, 226, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(209, 209, 209, 1) 51%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(226, 226, 226, 1)),
+    color-stop(50%, rgba(219, 219, 219, 1)),
+    color-stop(51%, rgba(209, 209, 209, 1)),
+    color-stop(100%, rgba(254, 254, 254, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(209, 209, 209, 1) 51%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(209, 209, 209, 1) 51%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(209, 209, 209, 1) 51%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(209, 209, 209, 1) 51%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
 }
 
-.technology { /*header of 2nd demo*/
-	cursor: hand;
-	cursor: pointer;
-	font: bold 14px Arial regualar, Arial, Verdana;
-	margin: 10px 0;
+.technology {
+  /*header of 2nd demo*/
+  cursor: hand;
+  cursor: pointer;
+  font: bold 14px Arial regualar, Arial, Verdana;
+  margin: 10px 0;
 }
 
 .openlanguage {
-	/*class added to contents of 2nd demo when they are open*/
-	color: green;
+  /*class added to contents of 2nd demo when they are open*/
+  color: green;
 }
 
 .closedlanguage {
-	/*class added to contents of 2nd demo when they are closed*/
-	color: red;
+  /*class added to contents of 2nd demo when they are closed*/
+  color: red;
 }
 
 /* ToDo: Responsive Design*/
