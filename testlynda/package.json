@@ -1,0 +1,15 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "testing lynda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "somekeyword1",
+    "somekeyword2"
+  ],
+  "author": "birol efe",
+  "license": "ISC"
+}
