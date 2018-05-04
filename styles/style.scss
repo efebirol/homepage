@@ -1,0 +1,314 @@
+//colors
+$black: #000;
+$white: #fff;
+$red: red;
+$color_celeste_approx: #cccccc;
+$black_40: rgba(0, 0, 0, 0.4);
+$color_romance_approx: #fefefe;
+$color_suva_gray_approx: #888;
+$color_silver_chalice_approx: #aaaaaa;
+$color_gallery_approx: #f0f0f0;
+$color_confetti_approx: #edd966;
+$color_hippie_green_approx: #5e9040;
+$color_sulu_approx: #b8e78b;
+$color_rice_flower_approx: #f1ffe3;
+$color_tom_thumb_approx: #3c5d29;
+$color_chalet_green_approx: #4a6e35;
+$gray:  gray;
+$color_bon_jour_approx: #e1e1e1;
+$alto_100: rgba(219, 219, 219, 1);
+$color_japanese_laurel_approx: green;
+
+//fonts
+$font_0: Arial regualar;
+$font_1: Arial;
+$font_2: Verdana;
+
+/*Default CSS*/
+#wrapper {
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	height: 110px;
+	padding: 10px;
+	margin-bottom: 5px;
+	img {
+		float: left;
+	}
+}
+.logowrapper {
+	display: inline-block;
+}
+nav {
+	display: inline-block;
+	margin-top: 40px;
+	float: right;
+	a {
+		color: $black;
+		font-size: 15px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 5px;
+		&:last-child {
+			padding: 0;
+		}
+		&:hover {
+			color: $white;
+			font-size: 15px;
+			text-transform: uppercase;
+			text-decoration: none;
+			background: $red;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 5px;
+			padding: 5px;
+		}
+	}
+}
+.headertext {
+	margin: 20px 0 0 10px;
+	display: inline-block;
+	text-transform: uppercase;
+	h1 {
+		margin: 0;
+	}
+	h4 {
+		margin: 5px 0;
+	}
+}
+#middlecontent {
+	width: 290px;   /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin-bottom: 5px;
+}
+#middle {
+	width: 294px;
+	float: left;
+	padding: 5px 15px;
+	margin: 0 5px 5px;
+	margin-bottom: 5px;
+	.heading {
+	}
+	h2 {
+		text-transform: uppercase;
+		vertical-align: text-bottom;
+		display: inline;
+	}
+	#content p {
+		background: $color_celeste_approx;
+		margin: 0;
+		padding: 5px;
+	}
+}
+#sidebar {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+	margin-bottom: 5px;
+	h2 {
+		display: inline;
+		margin-top: 0;
+		text-transform: uppercase;
+	}
+}
+.toolsitemtext {
+	display: inline-block;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+	background: $black;
+	height: 15px;
+	a {
+		color: $white;
+		font-size: 13px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}
+.footerelements {
+	float: right;
+}
+
+/* display smaller 980px */
+@media screen and(max-width: 980px) {
+	#wrapper {
+		width: 94%;
+	}
+	#middlecontent {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0 0 5px 5px;
+		float: right;
+	}
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+	header {
+		padding: 1% 4%;
+	}
+	footer {
+		padding: 1% 4%;
+	}
+}
+
+/* display smaller 700px */
+@media screen and(max-width: 600px) {
+	#middlecontent {
+		width: auto;
+		float: none;
+	}
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+}
+
+/* display smaller 480px*/
+@media screen and(max-width: 480px) {
+	header {
+		height: auto;
+		img {
+			display: none;
+		}
+	}
+	h1 {
+		font-size: 2em;
+	}
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: $black;
+	background-color: $black_40;
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: $color_romance_approx;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid $color_suva_gray_approx;
+	width: 80%;
+}
+
+/* The Close Button */
+.close {
+	color: $color_silver_chalice_approx;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	&:hover {
+		color: $black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	&:focus {
+		color: $black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+#wrapperBox {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*ID-Selektor mit Hovereffekt: Schatten ohne Image*/
+.mydiv {
+	margin: 60px auto;
+	padding: 10px;
+	width: 400px;
+	height: 500px;
+	background-color: $color_gallery_approx;
+	width: 850px;
+}
+
+/*ID-Selektor mit Hovereffekt: Schatten ohne Image*/
+#myDiv1 {
+  /*Transtion Delay verzögert aufkommen von Schatten*/
+	//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+	transition-duration: 1s;
+/*Hover Effekt für den ID-Selektor "myDiv1" */
+  &:hover {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 30px $black;
+		background-color: $color_confetti_approx;
+	}
+}
+
+/* Akkordeon */
+a {
+	text-decoration: none;
+	color: $color_hippie_green_approx;
+	border-bottom: 1px solid $color_sulu_approx;
+	&:visited {
+		background-color: $color_rice_flower_approx;
+	}
+	&:hover {
+		color: $color_tom_thumb_approx;
+		background-color: $color_rice_flower_approx;
+		border-bottom: 1px solid $color_chalet_green_approx;
+	}
+}
+
+/*header of 1st demo*/
+.mypets {
+	cursor: hand;
+	cursor: pointer;
+	padding: 2px 5px;
+	border: 1px solid $gray;
+	background: $color_bon_jour_approx;
+	padding-left: 10px;
+}
+.openpet {
+	background: $color_bon_jour_approx;
+	background: linear-gradient(to right, $color_bon_jour_approx 0, $alto_100 50%, $color_celeste_approx 51%, $color_romance_approx 100% );
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_bon_jour_approx', endcolorstr='$color_romance_approx', gradienttype=1 );
+}
+
+/*header of 2nd demo*/
+.technology {
+	cursor: hand;
+	cursor: pointer;
+	font: bold 14px $font_0, $font_1, $font_2;
+	margin: 10px 0;
+}
+
+/*class added to contents of 2nd demo when they are open*/
+.openlanguage {
+	color: $color_japanese_laurel_approx;
+}
+
+/*class added to contents of 2nd demo when they are closed*/
+.closedlanguage {
+	color: $red;
+}
+.toolsitem img {
+	vertical-align: top;
+}
+
+/* ToDo: Responsive Design*/
